@@ -1,0 +1,20 @@
+{
+	"name":"com.smidgenomics.unity-bt",
+	"version":"0.1.0",
+	"displayName":"Behaviour Trees",
+	"description":"Behaviour tree logic",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Smidgens/unity-bt.git"
+	},
+	"author":{
+		"name":"Unnar Krist",
+		"url":"https://github.com/Smidgens"
+	},
+	"keywords":[
+		"unity-bt",
+		"behaviour-tree",
+		"bt",
+		"smidgenomics"
+	]
+}
