@@ -1,8 +1,18 @@
+
 <img src="https://raw.githubusercontent.com/Smidgenomics/unity.plugins/master/bt/banner.png" width="100%"/>
 
 Behaviour Tree library for Unity.
 
 [Wiki](https://github.com/Smidgenomics/unity.plugins/wiki/Behaviour-Trees)
+
+
+---
+
+<p style="text-align: center;" align="center">
+<b>📣 CURRENTLY IN DRAFT MODE - NO RELEASE TAG AVAILABLE YET - USE AT OWN RISK</b>
+</p>
+
+---
 
 <br/>
 
