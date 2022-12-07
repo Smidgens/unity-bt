@@ -11,8 +11,7 @@ Behaviour Tree library for Unity.
 
 # 🎯 Goal
 
-* Provide lean runtime engine for Behaviour Trees that is agnostic of implementation specifics or serialization schemes.
-* Provide optional low-level utilities for implementing commonly used patterns for serialization, editor GUI, or runtime debugging.
+* Provide a lean runtime engine for BTs.
 
 <br/>
 
