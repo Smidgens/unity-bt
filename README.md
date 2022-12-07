@@ -16,10 +16,10 @@ Behaviour Tree library for Unity.
 
 <br/>
 
-# 🎯 Goals
+# 🎯 Goal
 
-* Provide standard BT boilerplate logic while staying use-case agnostic.
-* Avoid GUI, serialization or debugging mechanisms, but provide common utilities for such features to be implemented separately without impacting core runtime logic.
+* Provide lean runtime engine for Behaviour Trees that is agnostic of implementation specifics or serialization schemes.
+* Provide optional low-level utilities for implementing commonly used patterns for serialization, editor GUI, or runtime debugging.
 
 <br/>
 
