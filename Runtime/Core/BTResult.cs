@@ -19,11 +19,6 @@ namespace Smidgenomics.Unity.BT
 		/// Still running
 		/// </summary>
 		Running = 2,
-		/// <summary>
-		/// Finished with abort failure
-		/// Note: not used for anything yet, will be treated as failure
-		/// </summary>
-		Aborted = 3,
-		
+
 	}
 }

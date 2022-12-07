@@ -3,21 +3,10 @@
 namespace Smidgenomics.Unity.BT
 {
 	/// <summary>
-	/// Behaviour Tree
+	/// BT runner
 	/// </summary>
-	public interface IBT : IBTInternals
+	public interface IBT
 	{
-		void Tick();
-	}
-}
-
-namespace Smidgenomics.Unity.BT
-{
-	/// <summary>
-	/// BT, internal API
-	/// </summary>
-	public interface IBTInternals
-	{
-		
+		BTResult Tick();
 	}
 }

@@ -6,29 +6,18 @@ namespace Smidgenomics.Unity.BT
 	/// Pass through logic for node result
 	/// used to implement decorator like logic
 	/// </summary>
-	public interface IBTNodeFilter
+	public interface IBTFilter
 	{
-		void OnRelevant();
-		void OnCeaseRelevant();
-
 		/// <summary>
-		/// Run evaluation before ticking node
+		/// Preprocessing before ticking child.
+		/// Returning Fail will skip processing
 		/// </summary>
 		/// <returns></returns>
-		BTResult OnBeforeTick();
+		BTResult PreTick();
 
-		BTResult OnAfterTick(BTResult result);
-	}
-}
-
-
-namespace Smidgenomics.Unity.BT
-{
-	/// <summary>
-	/// Internal API
-	/// </summary>
-	public interface IBTNodeFilterInternals : IBTContextBound
-	{
-		
+		/// <summary>
+		/// Evaluate result of child tick
+		/// </summary>
+		BTResult Tick(BTResult childResult);
 	}
 }

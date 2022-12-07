@@ -1,44 +1,35 @@
 // smidgens @ github
 
-#pragma warning disable 0414
-
 namespace Smidgenomics.Unity.BT
 {
 	/// <summary>
-	/// Single child node
+	/// Concrete decorator, applies custom filter
 	/// </summary>
-	internal sealed class BTDecorator : BTAuxiliary
+	internal sealed class BTDecorator : BTNode, IBTDecorator
 	{
-		public BTDecorator(IBTNode child, IBTNodeFilter filter) : base(child)
+		public BTDecorator(IBTNode child, IBTFilter filter)
 		{
 			_filter = filter;
-		}
-
-		public override void Activate()
-		{
-			_filter.OnRelevant();
+			_child = child;
 		}
 
 		public override BTResult Tick()
 		{
 			// run pre-condition
-			BTResult preResult = _filter.OnBeforeTick();
-			if(preResult != BTResult.Success)
-			{
-				return preResult;
-			}
+			BTResult preResult = _filter.PreTick();
 
-			BTResult childResult = _Child.Tick();
-
-			return _filter.OnAfterTick(childResult);
+			// precondition failed or still busy
+			if(preResult != BTResult.Success) { return preResult; }
+			
+			// pass result of child tick to filter
+			return _filter.Tick(_child.Tick());
 		}
 
-		public override void Deactivate()
-		{
-			_filter.OnCeaseRelevant();
-		}
+		// custom precondition
+		private IBTFilter _filter = null;
 
-		private IBTNodeFilter _filter = null;
+		// filtered child node
+		private IBTNode _child = null;
 
 	}
 }

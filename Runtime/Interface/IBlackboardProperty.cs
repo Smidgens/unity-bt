@@ -6,7 +6,7 @@ namespace Smidgenomics.Unity.BT
 	/// Blackboard variable handle
 	/// </summary>
 	/// <typeparam name="T">Property type</typeparam>
-	internal interface IBTBlackboardProperty<T>
+	internal interface IBlackboardProperty<T>
 	{
 		T Get();
 		void Set(in T v);

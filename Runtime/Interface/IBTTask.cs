@@ -3,20 +3,13 @@
 namespace Smidgenomics.Unity.BT
 {
 	/// <summary>
-	/// Internal API
-	/// </summary>
-	public interface IBTTaskInternals
-	{
-
-	}
-	
-	/// <summary>
 	/// Custom task logic
 	/// </summary>
-	public interface IBTTask : IBTTaskInternals
+	public interface IBTTask
 	{
-		BTResult OnTick();
-		void OnActivate();
-		void OnDeactivate();
+		/// <summary>
+		/// Tick handler
+		/// </summary>
+		BTResult Tick();
 	}
 }

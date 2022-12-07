@@ -3,10 +3,7 @@
 namespace Smidgenomics.Unity.BT
 {
 	/// <summary>
-	/// Single child BT node
+	/// Single-child node
 	/// </summary>
-	public interface IBTDecorator : IBTNode
-	{
-	
-	}
+	public interface IBTDecorator : IBTNode { }
 }
