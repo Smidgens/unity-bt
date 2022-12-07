@@ -11,7 +11,6 @@ Lightweight Behaviour Tree engine for Unity.
 
 * Provide a lean runtime engine for BTs.
 
-
 <br/>
 
 # 📦 Install
