@@ -1,5 +1,7 @@
 
 <img src="https://raw.githubusercontent.com/Smidgenomics/unity.plugins/master/bt/banner.png" width="100%"/>
+<img src="https://raw.githubusercontent.com/Smidgenomics/unity.plugins/master/_shared/draft.png" width="100%"/>
+
 
 Behaviour Tree library for Unity.
 
